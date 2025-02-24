@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Reading Plans</title>
+
+    <link rel="shortcut icon" href="img/bible-light-mode.svg" type="image/x-icon" media="(prefers-color-scheme: light)">
+    <link rel="shortcut icon" href="img/bible-dark-mode.svg" type="image/x-icon" media="(prefers-color-scheme: dark)">
+
+    <!-- <meta name="color-scheme" content="light dark"/> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/7.1.0/docx.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+</head>
+<body>
+
+    <main>
+
+        <article>
+            <!-- <h1>Bible Reading Plans</h1> -->
+
+            <div id="home" class="plan">
+                <h1>Bible Reading Plans</h1>
+                <p>Welcome to <strong><i class="fa-solid fa-book-bible"></i> Bible Reading Plans</strong>! Choose a plan that suits your schedule and start your journey through the Scriptures.</p>
+
+                <h3>Currently Available</h3>
+                <ul>
+                    
+                    <li><a href="#six-month">6-Month Bible Reading Plan (Genesis to Revelation)</a></li>
+
+
+                </ul>
+
+                <h3>Coming Soon!</h3>
+                <ul>
+                    <li>Two Year Bible Reading Plan (Genesis to Revelation)</li>
+                    <li>Psalms and Proverbs Bible Reading Plan</li>
+                    <li>Old Testament Bible Reading Plan (Genesis to Malachi)</li>
+                    <li>New Testament Bible Reading Plan (Matthew to Revelation)</li>
+                    <li>Generate Your Own Custom Reading Plan!</li>    
+                    <br>
+                    <!-- <li>Export to PDF</li> -->
+                    <li>Export to Word Document</li>
+                    <li>Export to Spreadsheet</li>
+                </ul>
+            </div>
+
+            <div id="about" class="plan" style="display:none;">
+                <h1>About Bible Reading Plans</h1>
+            </div>
+
+            <div id="generate" class="plan" style="display: none;">
+                <h1>Create Your Own Custom Reading Plan!</h1>
+                Generate a custom reading plan here.
+            </div>
+
+            
+<div id="six-month" class="plan" style="display: none;">
+    <h1>6-Month Bible Reading Plan (Genesis to Revelation) <button onclick="openModal()"><i class="fa-solid fa-file-export"></i></button></h1>
+
+    <h3>How It Works:</h3>
+    <ul>
+        <li>7–8 chapters per day (takes ~30–45 minutes daily)</li>
+        <li>Old & New Testament in order (no jumping around)</li>
+        <li>Finish in 180 days (6 months)</li>
+    </ul>
+
+    <div class="three-column-container">
+        <div class="column">
+            <h2>Month 1: Genesis to Deuteronomy</h2>
+            <ol>
+                <li>Genesis 1–7</li>
+                <li>Genesis 8–14</li>
+                <li>Genesis 15–21</li>
+                <li>Genesis 22–28</li>
+                <li>Genesis 29–35</li>
+                <li>Genesis 36–42</li>
+                <li>Genesis 43–50</li>
+                <li>Exodus 1–7</li>
+                <li>Exodus 8–14</li>
+                <li>Exodus 15–21</li>
+                <li>Exodus 22–28</li>
+                <li>Exodus 29–35</li>
+                <li>Exodus 36–40, Leviticus 1–2</li>
+                <li>Leviticus 3–9</li>
+                <li>Leviticus 10–16</li>
+                <li>Leviticus 17–23</li>
+                <li>Leviticus 24–27</li>
+                <li>Numbers 1–7</li>
+                <li>Numbers 8–14</li>
+                <li>Numbers 15–21</li>
+                <li>Numbers 22–28</li>
+                <li>Numbers 29–35</li>
+                <li>Numbers 36, Deuteronomy 1–6</li>
+                <li>Deuteronomy 7–13</li>
+                <li>Deuteronomy 14–20</li>
+                <li>Deuteronomy 21–27</li>
+                <li>Deuteronomy 28–34</li>
+                <li>Joshua 1–7</li>
+                <li>Joshua 8–14</li>
+                <li>Joshua 15–21</li>
+            </ol>
+        </div>
+
+        <div class="column">
+            <h2>Month 2: Judges to 2 Samuel</h2>
+            <ol>
+                <li>Joshua 22–24, Judges 1–4</li>
+                <li>Judges 5–11</li>
+                <li>Judges 12–18</li>
+                <li>Judges 19–21, Ruth 1–4</li>
+                <li>1 Samuel 1–7</li>
+                <li>1 Samuel 8–14</li>
+                <li>1 Samuel 15–21</li>
+                <li>1 Samuel 22–28</li>
+                <li>1 Samuel 29–31, 2 Samuel 1–5</li>
+                <li>2 Samuel 6–12</li>
+                <li>2 Samuel 13–19</li>
+                <li>2 Samuel 20–24, 1 Kings 1–3</li>
+                <li>1 Kings 4–10</li>
+                <li>1 Kings 11–17</li>
+                <li>1 Kings 18–22</li>
+                <li>2 Kings 1–7</li>
+                <li>2 Kings 8–14</li>
+                <li>2 Kings 15–21</li>
+                <li>2 Kings 22–25, 1 Chronicles 1–2</li>
+                <li>1 Chronicles 3–9</li>
+                <li>1 Chronicles 10–16</li>
+                <li>1 Chronicles 17–23</li>
+                <li>1 Chronicles 24–29</li>
+                <li>2 Chronicles 1–7</li>
+                <li>2 Chronicles 8–14</li>
+                <li>2 Chronicles 15–21</li>
+                <li>2 Chronicles 22–28</li>
+                <li>2 Chronicles 29–35</li>
+                <li>2 Chronicles 36, Ezra 1–6</li>
+                <li>Ezra 7–10, Nehemiah 1–3</li>
+            </ol>
+        </div>
+
+        <div class="column">
+            <h2>Month 3: Nehemiah to Psalms</h2>
+            <ol>
+                <li>Nehemiah 4–10</li>
+                <li>Nehemiah 11–13, Esther 1–5</li>
+                <li>Esther 6–10, Job 1–4</li>
+                <li>Job 5–11</li>
+                <li>Job 12–18</li>
+                <li>Job 19–25</li>
+                <li>Job 26–32</li>
+                <li>Job 33–39</li>
+                <li>Job 40–42, Psalms 1–5</li>
+                <li>Psalms 6–12</li>
+                <li>Psalms 13–19</li>
+                <li>Psalms 20–26</li>
+                <li>Psalms 27–33</li>
+                <li>Psalms 34–40</li>
+                <li>Psalms 41–47</li>
+                <li>Psalms 48–54</li>
+                <li>Psalms 55–61</li>
+                <li>Psalms 62–68</li>
+                <li>Psalms 69–75</li>
+                <li>Psalms 76–82</li>
+                <li>Psalms 83–89</li>
+                <li>Psalms 90–96</li>
+                <li>Psalms 97–103</li>
+                <li>Psalms 104–110</li>
+                <li>Psalms 111–117</li>
+                <li>Psalms 118–124</li>
+                <li>Psalms 125–131</li>
+                <li>Psalms 132–138</li>
+                <li>Psalms 139–145</li>
+                <li>Psalms 146–150, Proverbs 1–3</li>
+            </ol>
+        </div>
+
+        <div class="column">
+            <h2>Month 4: Proverbs to Isaiah</h2>
+            <ol>
+                <li>Proverbs 4–10</li>
+                <li>Proverbs 11–17</li>
+                <li>Proverbs 18–24</li>
+                <li>Proverbs 25–31</li>
+                <li>Ecclesiastes 1–7</li>
+                <li>Ecclesiastes 8–12, Song of Solomon 1–4</li>
+                <li>Song of Solomon 5–8, Isaiah 1–3</li>
+                <li>Isaiah 4–10</li>
+                <li>Isaiah 11–17</li>
+                <li>Isaiah 18–24</li>
+                <li>Isaiah 25–31</li>
+                <li>Isaiah 32–38</li>
+                <li>Isaiah 39–45</li>
+                <li>Isaiah 46–52</li>
+                <li>Isaiah 53–59</li>
+                <li>Isaiah 60–66</li>
+                <li>Jeremiah 1–7</li>
+                <li>Jeremiah 8–14</li>
+                <li>Jeremiah 15–21</li>
+                <li>Jeremiah 22–28</li>
+                <li>Jeremiah 29–35</li>
+                <li>Jeremiah 36–42</li>
+                <li>Jeremiah 43–49</li>
+                <li>Jeremiah 50–52, Lamentations 1–2</li>
+                <li>Lamentations 3–5, Ezekiel 1–2</li>
+                <li>Ezekiel 3–9</li>
+                <li>Ezekiel 10–16</li>
+                <li>Ezekiel 17–23</li>
+                <li>Ezekiel 24–30</li>
+                <li>Ezekiel 31–37</li>
+            </ol>
+        </div>
+
+        <div class="column">
+            <h2>Month 5: Daniel to Romans</h2>
+            <ol>
+                <li>Ezekiel 38–44</li>
+                <li>Ezekiel 45–48, Daniel 1–2</li>
+                <li>Daniel 3–9</li>
+                <li>Daniel 10–12, Hosea 1–5</li>
+                <li>Hosea 6–14</li>
+                <li>Joel 1–3, Amos 1–3</li>
+                <li>Amos 4–9, Obadiah</li>
+                <li>Jonah 1–4, Micah 1–3</li>
+                <li>Micah 4–7, Nahum 1–3</li>
+                <li>Habakkuk 1–3, Zephaniah 1–3</li>
+                <li>Haggai 1–2, Zechariah 1–5</li>
+                <li>Zechariah 6–14</li>
+                <li>Malachi 1–4, Matthew 1–3</li>
+                <li>Matthew 4–10</li>
+                <li>Matthew 11–17</li>
+                <li>Matthew 18–24</li>
+                <li>Matthew 25–28, Mark 1–2</li>
+                <li>Mark 3–9</li>
+                <li>Mark 10–16</li>
+                <li>Luke 1–6</li>
+                <li>Luke 7–13</li>
+                <li>Luke 14–20</li>
+                <li>Luke 21–24, John 1–2</li>
+                <li>John 3–9</li>
+            </ol>
+        </div>
+
+        <div class="column">
+            <h2>Month 6: Acts to Revelation</h2>
+            <ol>
+                <li>John 10–16</li>
+                <li>John 17–21, Acts 1–2</li>
+                <li>Acts 3–9</li>
+                <li>Acts 10–16</li>
+                <li>Acts 17–23</li>
+                <li>Acts 24–28, Romans 1–2</li>
+                <li>Romans 3–9</li>
+                <li>Romans 10–16, 1 Corinthians 1–2</li>
+                <li>1 Corinthians 3–9</li>
+                <li>1 Corinthians 10–16</li>
+                <li>2 Corinthians 1–7</li>
+                <li>2 Corinthians 8–13, Galatians 1–2</li>
+                <li>Galatians 3–6, Ephesians 1–3</li>
+                <li>Ephesians 4–6, Philippians 1–4</li>
+                <li>Colossians 1–4, 1 Thessalonians 1–5</li>
+                <li>2 Thessalonians 1–3, 1 Timothy 1–6</li>
+                <li>2 Timothy 1–4, Titus 1–3</li>
+                <li>Philemon, Hebrews 1–5</li>
+                <li>Hebrews 6–13</li>
+                <li>James 1–5, 1 Peter 1–3</li>
+                <li>1 Peter 4–5, 2 Peter 1–3</li>
+                <li>1 John 1–5, 2 John, 3 John, Jude</li>
+                <li>Revelation 1–7</li>
+                <li>Revelation 8–14</li>
+                <li>Revelation 15–22</li>
+            </ol>
+        </div>
+    </div>
+            </div>
+            
+
+
+            <div id="one-year" class="plan" style="display: none;">
+                <h1>One Year Bible Reading Plan (Genesis to Revelation)</h1>
+                One-Year Plan content...
+            </div>
+
+            <div id="two-year" class="plan" style="display: none;">
+                <h1>Two Year Bible Reading Plan (Genesis to Revelation)</h1>
+                Two-Year Plan content...
+            </div>
+
+            <div id="psalms-proverbs" class="plan" style="display: none;">
+                <h1>Psalms and Proverbs Bible Reading Plan</h1>
+                Psalms-Proverbs Plan content...
+            </div>
+
+            <div id="old-testament" class="plan" style="display: none;">
+                <h1>Old Testament Bible Reading Plan (Genesis to Malachi)</h1>
+                Old Testament Plan content...
+            </div>
+
+            <div id="new-testament" class="plan" style="display: none;">
+                <h1>New Testament Bible Reading Plan (Matthew to Revelation)</h1>
+                New Testament Plan content...
+            </div>
+
+        </article>
+    </main>
+
+    <!-- <div id="export-buttons">
+        <button onclick="exportToPDF()"><i class="fa-solid fa-file-pdf"></i></button>
+        <button onclick="exportToWord()"><i class="fa-solid fa-file-word"></i></button>
+        <button onclick="exportToCSV()"><i class="fa-solid fa-file-csv"></i></button>
+    </div> -->
+
+    <div id="exportModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <!-- <h2>Export Options</h2> -->
+            <button onclick="exportToPDF()">Export to PDF</button>
+        </div>
+    </div>
+
+
+    <!-- <button id="exportButton" onclick="openModal()"><i class="fa-solid fa-file-export"></i> Export</button> -->
+
+    
+</body>
+
+<script src="js/navBar.js"></script>
+
+</html>
