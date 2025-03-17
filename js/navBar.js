@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="navbar" id="navbar-menu">
             <div class="nav-item active" onclick="showPlan('home', this)">Home</div>
             <div class="nav-item" onclick="showPlan('six-month', this)">Six-Month Plan (<i class="fa-solid fa-fire"></i>)</div>
+            <div class="nav-item" onclick="showPlan('one-year-chrono', this)">1 Year Chronological Plan</div>
 
             <br>
 
@@ -39,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <div id="mobile-menu">
             <div class="nav-item active" onclick="showPlan('home', this)">Home</div>
             <div class="nav-item" onclick="showPlan('six-month', this)">Six-Month Plan (<i class="fa-solid fa-fire"></i>)</div>
+            <div class="nav-item" onclick="showPlan('one-year-chrono', this)">1 Year Chronological Plan</div>
 
             <br>
             <!-- <div class="nav-item" onclick="showPlan('generate', this)">Generate Plan <i class="fa-solid fa-wand-magic-sparkles"></i></div>
@@ -156,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 margin: 1,
                 filename: 'Bible_Reading_Plan.pdf',
                 image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { scale: 2, useCORS: true },
+                html2canvas: { scale: 1, useCORS: true }, // No scaling for fitting based on screen size
                 jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
             };
             html2pdf().from(visiblePlan).set(opt).save();
